@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTA VI Hub</title>
+  <meta name="description"
+    content="Сайт о GTA VI: новости, факты, предположения и всё, что известно о грядущей игре Rockstar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="gta.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body class="site-loading">
+  <div class="site-loader" id="site-loader" aria-hidden="true">
+    <div class="loader-stage">
+      <div class="loader-landscape" aria-hidden="true">
+        <div class="loader-sun"></div>
+        <div class="loader-horizon"></div>
+        <svg class="loader-palms" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMax slice">
+          <path d="M88 360C112 257 102 159 59 73c35 27 60 55 75 85C124 105 127 53 119 0c31 49 46 102 44 159 21-42 52-75 94-99-42 47-70 105-82 175-11 44-15 85-14 125zM1232 360c-9-91 9-182 54-273-1 50 7 91 23 125 0-68 19-136 59-204-16 63-19 116-8 160 24-36 57-65 99-84-46 41-76 93-90 155-11 49-13 93-6 121z" fill="currentColor"/>
+          <path d="M330 360c3-57-7-109-31-157 29 21 49 44 61 71-4-46 1-88 17-128 9 41 10 81 3 120 17-25 39-43 66-55-28 31-45 67-51 107-4 14-5 28-4 42zM1010 360c3-56 18-107 45-152 1 30 7 55 19 77 1-42 13-82 35-122-8 39-8 72 0 99 17-22 39-39 66-50-30 27-49 60-57 100-5 16-6 32-4 48z" fill="currentColor" opacity=".7"/>
+        </svg>
+        <div class="loader-road"><i></i><i></i><i></i></div>
+        <div class="loader-car" aria-hidden="true">
+          <svg viewBox="0 0 160 70"><path d="M20 47h8l9-20c2-5 7-8 13-8h53c6 0 10 2 14 7l13 17 11 4v13H20z" fill="#11141a" stroke="#ffd59b" stroke-width="2"/><path d="m48 24-8 19h34V23H51c-1 0-2 0-3 1zm33-1v20h45l-12-16c-1-2-4-4-7-4z" fill="#eaa7a8" opacity=".72"/><circle cx="49" cy="59" r="10" fill="#08090c" stroke="#d1c2b3" stroke-width="3"/><circle cx="119" cy="59" r="10" fill="#08090c" stroke="#d1c2b3" stroke-width="3"/><path d="M20 46h-8m136 0h7" stroke="#fff2c9" stroke-width="3" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+      <div class="loader-brand">
+        <span class="loader-mark">VI</span>
+        <span class="loader-wordmark"><strong>GTA VI</strong><small>LEONIDA ARCHIVE</small></span>
+        <span class="loader-orbit" aria-hidden="true"></span>
+      </div>
+      <div class="loader-puzzle" aria-hidden="true">
+        <div class="puzzle-grid">
+          <svg class="puzzle-svg" viewBox="0 0 300 300" role="presentation">
+            <defs>
+              <clipPath id="puzzle-0"><path d="M0 0H100V34C100 40 115 40 115 50S100 60 100 66V100H66C60 100 60 115 50 115S40 100 34 100H0Z"/></clipPath>
+              <clipPath id="puzzle-1"><path d="M0 0H100V34C100 40 85 40 85 50S100 60 100 66V100H66C60 100 60 115 50 115S40 100 34 100H0V66C0 60 15 60 15 50S0 40 0 34Z"/></clipPath>
+              <clipPath id="puzzle-2"><path d="M0 0H100V100H66C60 100 60 115 50 115S40 100 34 100H0V66C0 60-15 60-15 50S0 40 0 34Z"/></clipPath>
+              <clipPath id="puzzle-3"><path d="M0 0C34 0 40 15 50 15S66 0 66 0H100V34C100 40 85 40 85 50S100 60 100 66V100H66C60 100 60 85 50 85S40 100 34 100H0Z"/></clipPath>
+              <clipPath id="puzzle-4"><path d="M0 0C34 0 40 15 50 15S66 0 66 0H100V34C100 40 115 40 115 50S100 60 100 66V100H66C60 100 60 85 50 85S40 100 34 100H0V66C0 60-15 60-15 50S0 40 0 34Z"/></clipPath>
+              <clipPath id="puzzle-5"><path d="M0 0C34 0 40 15 50 15S66 0 66 0H100V100H66C60 100 60 85 50 85S40 100 34 100H0V66C0 60 15 60 15 50S0 40 0 34Z"/></clipPath>
+              <clipPath id="puzzle-6"><path d="M0 0C34 0 40-15 50-15S66 0 66 0H100V34C100 40 115 40 115 50S100 60 100 66V100H0Z"/></clipPath>
+              <clipPath id="puzzle-7"><path d="M0 0C34 0 40-15 50-15S66 0 66 0H100V34C100 40 85 40 85 50S100 60 100 66V100H0V66C0 60 15 60 15 50S0 40 0 34Z"/></clipPath>
+              <clipPath id="puzzle-8"><path d="M0 0C34 0 40-15 50-15S66 0 66 0H100V100H0V66C0 60-15 60-15 50S0 40 0 34Z"/></clipPath>
+            </defs>
+            <g transform="translate(0 0)"><g class="puzzle-piece" style="--from-x:-60px;--from-y:-95px;--from-r:-22deg;--delay:0ms"><image href="https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&amp;imdensity=1&amp;imwidth=1280" x="0" y="0" width="300" height="300" preserveAspectRatio="xMidYMid slice" clip-path="url(#puzzle-0)"/><path d="M0 0H100V34C100 40 115 40 115 50S100 60 100 66V100H66C60 100 60 115 50 115S40 100 34 100H0Z"/></g></g>
+            <g transform="translate(100 0)"><g class="puzzle-piece" style="--from-x:15px;--from-y:-110px;--from-r:16deg;--delay:35ms"><image href="https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&amp;imdensity=1&amp;imwidth=1280" x="-100" y="0" width="300" height="300" preserveAspectRatio="xMidYMid slice" clip-path="url(#puzzle-1)"/><path d="M0 0H100V34C100 40 85 40 85 50S100 60 100 66V100H66C60 100 60 115 50 115S40 100 34 100H0V66C0 60 15 60 15 50S0 40 0 34Z"/></g></g>
+            <g transform="translate(200 0)"><g class="puzzle-piece" style="--from-x:84px;--from-y:-82px;--from-r:25deg;--delay:70ms"><image href="https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&amp;imdensity=1&amp;imwidth=1280" x="-200" y="0" width="300" height="300" preserveAspectRatio="xMidYMid slice" clip-path="url(#puzzle-2)"/><path d="M0 0H100V100H66C60 100 60 115 50 115S40 100 34 100H0V66C0 60-15 60-15 50S0 40 0 34Z"/></g></g>
+            <g transform="translate(0 100)"><g class="puzzle-piece" style="--from-x:-110px;--from-y:12px;--from-r:-28deg;--delay:105ms"><image href="https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&amp;imdensity=1&amp;imwidth=1280" x="0" y="-100" width="300" height="300" preserveAspectRatio="xMidYMid slice" clip-path="url(#puzzle-3)"/><path d="M0 0C34 0 40 15 50 15S66 0 66 0H100V34C100 40 85 40 85 50S100 60 100 66V100H66C60 100 60 85 50 85S40 100 34 100H0Z"/></g></g>
+            <g transform="translate(100 100)"><g class="puzzle-piece" style="--from-x:0px;--from-y:36px;--from-r:13deg;--delay:140ms"><image href="https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&amp;imdensity=1&amp;imwidth=1280" x="-100" y="-100" width="300" height="300" preserveAspectRatio="xMidYMid slice" clip-path="url(#puzzle-4)"/><path d="M0 0C34 0 40 15 50 15S66 0 66 0H100V34C100 40 115 40 115 50S100 60 100 66V100H66C60 100 60 85 50 85S40 100 34 100H0V66C0 60-15 60-15 50S0 40 0 34Z"/></g></g>
+            <g transform="translate(200 100)"><g class="puzzle-piece" style="--from-x:112px;--from-y:5px;--from-r:24deg;--delay:175ms"><image href="https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&amp;imdensity=1&amp;imwidth=1280" x="-200" y="-100" width="300" height="300" preserveAspectRatio="xMidYMid slice" clip-path="url(#puzzle-5)"/><path d="M0 0C34 0 40 15 50 15S66 0 66 0H100V100H66C60 100 60 85 50 85S40 100 34 100H0V66C0 60 15 60 15 50S0 40 0 34Z"/></g></g>
+            <g transform="translate(0 200)"><g class="puzzle-piece" style="--from-x:-76px;--from-y:100px;--from-r:17deg;--delay:210ms"><image href="https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&amp;imdensity=1&amp;imwidth=1280" x="0" y="-200" width="300" height="300" preserveAspectRatio="xMidYMid slice" clip-path="url(#puzzle-6)"/><path d="M0 0C34 0 40-15 50-15S66 0 66 0H100V34C100 40 115 40 115 50S100 60 100 66V100H0Z"/></g></g>
+            <g transform="translate(100 200)"><g class="puzzle-piece" style="--from-x:12px;--from-y:118px;--from-r:-19deg;--delay:245ms"><image href="https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&amp;imdensity=1&amp;imwidth=1280" x="-100" y="-200" width="300" height="300" preserveAspectRatio="xMidYMid slice" clip-path="url(#puzzle-7)"/><path d="M0 0C34 0 40-15 50-15S66 0 66 0H100V34C100 40 85 40 85 50S100 60 100 66V100H0V66C0 60 15 60 15 50S0 40 0 34Z"/></g></g>
+            <g transform="translate(200 200)"><g class="puzzle-piece" style="--from-x:94px;--from-y:92px;--from-r:23deg;--delay:280ms"><image href="https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&amp;imdensity=1&amp;imwidth=1280" x="-200" y="-200" width="300" height="300" preserveAspectRatio="xMidYMid slice" clip-path="url(#puzzle-8)"/><path d="M0 0C34 0 40-15 50-15S66 0 66 0H100V100H0V66C0 60-15 60-15 50S0 40 0 34Z"/></g></g>
+          </svg>
+        </div>
+      </div>
+      <div class="loader-footer">
+        <div class="loader-caption"><span class="loader-caption-dot"></span><span data-loader-caption>ПОДКЛЮЧАЕМСЯ К ЛЕОНИДЕ</span></div>
+        <div class="loader-progress"><i data-loader-progress></i></div>
+        <div class="loader-footer-meta"><span>LEONIDA · VICE CITY</span><span data-loader-percent aria-hidden="true">04%</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="GTA VI Hub — наверх">
+        <span class="brand-mark">G</span>
+        <span>GTA VI Hub</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"
+        aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="#latest">Новости</a>
+        <a href="#facts">Что известно</a>
+        <a href="#leaks">Сливы и слухи</a>
+        <a href="#unknowns">Что пока неизвестно</a>
+        <a href="#world">Мир</a>
+        <a href="#timeline">Хронология</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="catalog-nav-button" href="gta-news.html">Каталог <span aria-hidden="true">↗</span></a>
+        <a class="nav-button" href="#latest">Следить</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <a class="trailer-banner" href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank" rel="noreferrer">
+      <span class="trailer-banner-art" aria-hidden="true">
+        <svg class="trailer-banner-palms" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax slice"><path d="M75 300c28-76 37-148 22-216 26 36 42 70 47 103 6-63 25-119 60-169-19 56-23 104-11 144 25-31 58-54 99-67-45 34-73 77-85 130-7 29-10 54-8 75zm1125 0c-12-80-2-160 31-239 6 43 19 78 39 105 1-57 20-112 57-166-14 53-16 99-5 137 25-28 58-47 99-58-44 29-73 68-88 118-10 34-13 68-9 103zM340 300c9-55 6-107-12-157 25 24 42 50 51 79 3-48 16-90 40-127-11 42-11 80 0 113 17-22 40-38 68-47-30 26-50 60-58 100-3 14-4 27-3 39zm720 0c4-51 19-98 46-140 2 29 9 55 22 77 1-42 14-82 38-120-10 39-10 72-2 100 18-22 41-38 69-48-31 26-51 59-61 98-4 12-5 23-4 33z" fill="currentColor"/></svg>
+      </span>
+      <span class="trailer-banner-copy"><span class="trailer-banner-kicker">ROCKSTAR GAMES · ТРЕЙЛЕР 2</span><strong>Добро пожаловать<br>в Вайс-Сити</strong><span class="trailer-banner-cta">СМОТРЕТЬ ТРЕЙЛЕР <b>↗</b></span></span>
+      <span class="trailer-banner-index" aria-hidden="true">VICE CITY / 01</span>
+    </a>
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Досье на Grand Theft Auto VI</p>
+          <h1>GTA VI: факты, сливы и всё, что известно.</h1>
+          <p class="lead">
+            Разбираем официальные анонсы, трейлеры и утечки отдельно от слухов. Никаких
+            выдуманных «инсайдов» — только контекст и источники.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#facts">Изучить досье</a>
+            <a class="secondary-btn" href="#leaks">К утечкам</a>
+          </div>
+          <ul class="hero-stats">
+            <li>
+              <strong>Lucia</strong>
+              <span>главная героиня</span>
+            </li>
+            <li>
+              <strong>Vice</strong>
+              <span>город-центр</span>
+            </li>
+            <li>
+              <strong>Leonida</strong>
+              <span>штат действия игры</span>
+            </li>
+          </ul>
+          <aside class="hero-tracker" aria-labelledby="hero-tracker-title">
+            <div class="tracker-heading">
+              <span class="tracker-live-dot" aria-hidden="true"></span>
+              <span id="hero-tracker-title">Сигнал Леониды</span>
+              <span class="tracker-clock" data-game-clock>--:--</span>
+            </div>
+            <div class="tracker-status">
+              <span class="tracker-avatar lucia">L</span>
+              <p><strong>Лусия</strong><span data-character-status="lucia">Сигнал обновляется…</span></p>
+            </div>
+            <div class="tracker-status">
+              <span class="tracker-avatar jason">J</span>
+              <p><strong>Джейсон</strong><span data-character-status="jason">Сигнал обновляется…</span></p>
+            </div>
+            <p class="tracker-disclaimer">Атмосферная симуляция, не данные из игры</p>
+          </aside>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-artwork" data-tilt>
+            <img class="hero-artwork-image"
+              src="https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&amp;imdensity=1&amp;imwidth=1280"
+              alt="Официальный арт Grand Theft Auto VI с Люсией и Джейсоном на фоне Вайс-Сити" fetchpriority="high" />
+            <div class="artwork-shade"></div>
+            <div class="artwork-caption">
+              <span class="official-pill"><span></span> Официальный арт Rockstar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="latest" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Досье</p>
+          <h2>Главное о GTA VI</h2>
+        </div>
+        <div id="news-shelves" class="news-shelves"></div>
+        <div class="catalog-cta">
+          <div>
+            <span class="eyebrow">Всё досье в одном месте</span>
+            <p>Открой полный каталог, чтобы искать материалы, выбирать категории и читать подробности.</p>
+          </div>
+          <a class="primary-btn" href="gta-news.html">Открыть каталог <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="editorial-note">
+          Пометка «утечка» означает, что материал появился неофициально, а не то, что каждая
+          показанная в нём деталь гарантированно попадёт в финальную игру.
+        </p>
+      </div>
+    </section>
+
+    <section id="facts" class="section alt">
+      <div class="container">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Подтверждено Rockstar</p>
+          <h2>Официальные детали игры</h2>
+          <p class="section-intro">
+            Это то, что Rockstar показала в трейлерах и на официальной странице игры — в
+            отличие от пересказов анонимных источников.
+          </p>
+        </div>
+        <div class="facts-grid">
+          <article class="fact-card">
+            <span class="fact-tag">Место действия</span>
+            <h3>Штат Леонида</h3>
+            <p>
+              Современная версия Вайс-Сити находится в штате Леонида — вымышленном штате,
+              вдохновлённом Флоридой. Это больше, чем просто возвращение к городу из Vice City.
+            </p>
+            <a class="source-link" href="https://www.rockstargames.com/VI" target="_blank" rel="noreferrer">Страница
+              игры Rockstar ↗</a>
+          </article>
+          <article class="fact-card">
+            <span class="fact-tag">Главные герои</span>
+            <h3>Лусия и Джейсон</h3>
+            <p>
+              Официальные материалы называют Лусию и Джейсона центральными персонажами.
+              Трейлеры показывают их отношения и криминальные приключения, но подробности
+              сюжета Rockstar раскрывает постепенно.
+            </p>
+            <a class="source-link" href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank"
+              rel="noreferrer">Трейлер 2 на YouTube ↗</a>
+          </article>
+          <article class="fact-card">
+            <span class="fact-tag">Формат</span>
+            <h3>Открытый мир</h3>
+            <p>
+              Rockstar официально описывает игру как приключение с открытым миром. Точные
+              размеры карты, большинство систем и подробности миссий пока не опубликованы.
+            </p>
+            <a class="source-link" href="https://www.rockstargames.com/VI" target="_blank" rel="noreferrer">Официальная
+              страница ↗</a>
+          </article>
+        </div>
+        <div class="platform-strip">
+          <span class="platform-label">Официально заявленные платформы</span>
+          <strong>PlayStation 5</strong>
+          <span class="platform-divider"></span>
+          <strong>Xbox Series X|S</strong>
+          <span class="platform-note">Проверяй страницу Rockstar на случай новых анонсов.</span>
+        </div>
+        <div class="roster-block">
+          <div class="subsection-heading">
+            <p class="eyebrow">Официальный состав</p>
+            <h3>Не только Лусия и Джейсон</h3>
+          </div>
+          <div class="roster-grid">
+            <article class="roster-card">
+              <span class="roster-initial">C</span>
+              <div>
+                <h4>Cal Hampton</h4>
+                <p>Друг Джейсона, который предпочитает наблюдать за происходящим со стороны.</p>
+              </div>
+            </article>
+            <article class="roster-card">
+              <span class="roster-initial">B</span>
+              <div>
+                <h4>Boobie Ike</h4>
+                <p>Предприниматель Вайс-Сити с интересами в недвижимости, музыке и ночной жизни.</p>
+              </div>
+            </article>
+            <article class="roster-card">
+              <span class="roster-initial">D</span>
+              <div>
+                <h4>Dre’Quan Priest</h4>
+                <p>Музыкальный промоутер, который хочет вывести собственный лейбл на новый уровень.</p>
+              </div>
+            </article>
+            <article class="roster-card">
+              <span class="roster-initial">R</span>
+              <div>
+                <h4>Real Dimez</h4>
+                <p>Рэп-дуэт подруг Bae-Luxe и Roxy, использующих соцсети для продвижения музыки.</p>
+              </div>
+            </article>
+            <article class="roster-card">
+              <span class="roster-initial">R</span>
+              <div>
+                <h4>Raul Bautista</h4>
+                <p>Опытный грабитель банков, который ищет новых партнёров для рискованных дел.</p>
+              </div>
+            </article>
+            <article class="roster-card">
+              <span class="roster-initial">B</span>
+              <div>
+                <h4>Brian Heder</h4>
+                <p>Контрабандист старой школы, связанный с Джейсоном и местным бизнесом.</p>
+              </div>
+            </article>
+          </div>
+          <a class="source-link roster-source" href="https://www.rockstargames.com/VI" target="_blank"
+            rel="noreferrer">Имена и описания персонажей на сайте Rockstar ↗</a>
+        </div>
+
+        <div class="locations-block">
+          <div class="subsection-heading">
+            <p class="eyebrow">Штат Леонида</p>
+            <h3>Регионы, названные Rockstar</h3>
+          </div>
+          <div class="leonida-map-panel">
+            <div class="leonida-map-heading">
+              <div>
+                <span class="map-overline">ИНТЕРАКТИВНАЯ СХЕМА</span>
+                <h4>Выбери регион</h4>
+              </div>
+              <span class="map-not-to-scale">Не в масштабе</span>
+            </div>
+            <svg class="leonida-map" viewBox="0 0 900 450" role="group" aria-labelledby="leonida-map-title leonida-map-description">
+              <title id="leonida-map-title">Схема регионов Леониды</title>
+              <desc id="leonida-map-description">Условная, не географическая схема шести регионов. Выбери название, чтобы открыть связанные материалы каталога.</desc>
+              <defs>
+                <linearGradient id="leonida-fill" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#53e3d3" stop-opacity=".2" />
+                  <stop offset=".52" stop-color="#6689ff" stop-opacity=".12" />
+                  <stop offset="1" stop-color="#ff7da7" stop-opacity=".2" />
+                </linearGradient>
+                <linearGradient id="leonida-route" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#78f4e2" />
+                  <stop offset=".58" stop-color="#9aafff" />
+                  <stop offset="1" stop-color="#ff9fc1" />
+                </linearGradient>
+                <filter id="leonida-glow" x="-100%" y="-100%" width="300%" height="300%">
+                  <feGaussianBlur stdDeviation="5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+              <path class="map-land" d="M168 85 257 53 342 71 405 47 478 72 544 51 611 87 689 78 744 128 723 178 766 220 733 264 754 318 702 354 642 349 594 386 530 368 476 395 414 365 350 382 303 344 239 352 216 305 171 284 188 239 147 204 181 163Z" />
+              <path class="map-coastline" d="M168 85 257 53 342 71 405 47 478 72 544 51 611 87 689 78 744 128 723 178 766 220 733 264 754 318 702 354 642 349 594 386 530 368 476 395 414 365 350 382 303 344 239 352 216 305 171 284 188 239 147 204 181 163Z" />
+              <path class="map-route route-main" d="M220 144 C320 108 351 147 438 155 S585 108 667 145 S688 234 638 270 S538 296 462 280 345 272 278 309" />
+              <path class="map-route route-branch" d="M438 155 C432 219 450 244 462 280 S542 331 594 347" />
+              <path class="map-water" d="M258 102 C280 124 291 139 300 160 M514 104 C495 132 482 142 463 154 M565 320 C582 302 600 285 631 270" />
+              <a class="map-region" href="gta-news.html?location=vice-city" target="_blank" rel="noreferrer" aria-label="Открыть материалы о Vice City">
+                <circle class="map-node" cx="220" cy="144" r="9" />
+                <circle class="map-node-ring" cx="220" cy="144" r="17" />
+                <text x="220" y="119">VICE CITY</text>
+              </a>
+              <a class="map-region" href="gta-news.html?location=port-gellhorn" target="_blank" rel="noreferrer" aria-label="Открыть материалы о Port Gellhorn">
+                <circle class="map-node" cx="438" cy="155" r="8" />
+                <circle class="map-node-ring" cx="438" cy="155" r="15" />
+                <text x="438" y="128">PORT GELLHORN</text>
+              </a>
+              <a class="map-region" href="gta-news.html?location=ambrosia" target="_blank" rel="noreferrer" aria-label="Открыть материалы об Ambrosia">
+                <circle class="map-node" cx="667" cy="145" r="8" />
+                <circle class="map-node-ring" cx="667" cy="145" r="15" />
+                <text x="667" y="119">AMBROSIA</text>
+              </a>
+              <a class="map-region" href="gta-news.html?location=grassrivers" target="_blank" rel="noreferrer" aria-label="Открыть материалы о Grassrivers">
+                <circle class="map-node" cx="638" cy="270" r="8" />
+                <circle class="map-node-ring" cx="638" cy="270" r="15" />
+                <text x="638" y="303">GRASSRIVERS</text>
+              </a>
+              <a class="map-region" href="gta-news.html?location=leonida-keys" target="_blank" rel="noreferrer" aria-label="Открыть материалы о Leonida Keys">
+                <circle class="map-node" cx="594" cy="347" r="8" />
+                <circle class="map-node-ring" cx="594" cy="347" r="15" />
+                <text x="594" y="379">LEONIDA KEYS</text>
+              </a>
+              <a class="map-region" href="gta-news.html?location=mount-kalaga" target="_blank" rel="noreferrer" aria-label="Открыть материалы о Mount Kalaga">
+                <circle class="map-node" cx="278" cy="309" r="8" />
+                <circle class="map-node-ring" cx="278" cy="309" r="15" />
+                <text x="278" y="343">MOUNT KALAGA</text>
+              </a>
+            </svg>
+            <p class="map-disclaimer">Условная схема по официальным названиям регионов — не карта Rockstar и не точная реконструкция игрового мира.</p>
+          </div>
+          <div class="locations-grid">
+            <article class="location-card vice-city"><span>01 / ГОРОД</span>
+              <h4>Vice City</h4>
+            </article>
+            <article class="location-card port-gellhorn"><span>02 / ПОБЕРЕЖЬЕ</span>
+              <h4>Port Gellhorn</h4>
+            </article>
+            <article class="location-card ambrosia"><span>03 / ПРОМЗОНА</span>
+              <h4>Ambrosia</h4>
+            </article>
+            <article class="location-card grassrivers"><span>04 / БОЛОТА</span>
+              <h4>Grassrivers</h4>
+            </article>
+            <article class="location-card keys"><span>05 / ОСТРОВА</span>
+              <h4>Leonida Keys</h4>
+            </article>
+            <article class="location-card kalaga"><span>06 / ЗАПОВЕДНИК</span>
+              <h4>Mount Kalaga</h4>
+            </article>
+          </div>
+          <div class="world-observations">
+            <div class="subsection-heading">
+              <p class="eyebrow">Кадры, а не догадки</p>
+              <h3>Мир Леониды в деталях трейлеров</h3>
+              <p>Что действительно видно в официальных роликах — и чего по этим сценам пока нельзя заключить.</p>
+            </div>
+            <div class="world-observations-grid">
+              <article class="world-observation">
+                <span>01 / ПРИРОДА</span>
+                <h4>Животные и дикая среда</h4>
+                <p>Природные кадры и животные соседствуют с городскими сценами. Это часть образа штата, но не
+                  подтверждение охоты или конкретных игровых взаимодействий.</p>
+              </article>
+              <article class="world-observation">
+                <span>02 / ТРАНСПОРТ</span>
+                <h4>Дороги и побережье</h4>
+                <p>В роликах видны автомобили, дороги и сцены у воды. Трейлеры не дают полного списка транспорта и
+                  подробного описания управления.</p>
+              </article>
+              <article class="world-observation">
+                <span>03 / МЕДИА</span>
+                <h4>Социальная жизнь в кадре</h4>
+                <p>Вертикальные клипы и прямые эфиры передают современную культуру Леониды. Возможности виртуальных
+                  соцсетей для игрока отдельно не подтверждены.</p>
+              </article>
+              <article class="world-observation">
+                <span>04 / АТМОСФЕРА</span>
+                <h4>Один штат — разные настроения</h4>
+                <p>Солнечные виды, ночная жизнь и криминальная завязка создают контраст, который Rockstar использует в
+                  официальном синопсисе и трейлерах.</p>
+              </article>
+            </div>
+            <a class="source-link" href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank"
+              rel="noreferrer">Сверить детали со вторым трейлером Rockstar ↗</a>
+          </div>
+          <p class="editorial-note">
+            Названия локаций опубликованы в материалах Rockstar. Эти карточки не означают,
+            что известны точные границы игрового мира или размер каждой области.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="leaks" class="section">
+      <div class="container">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Неофициальные материалы</p>
+          <h2>Большая утечка 2022 года и что она значит</h2>
+          <p class="section-intro">
+            В сентябре 2022 года в сети распространились ранние материалы разработки GTA VI.
+            Ниже — контекст события, а не ссылка на украденные файлы или их копии.
+          </p>
+        </div>
+
+        <div class="leak-feature">
+          <div class="leak-feature-copy">
+            <span class="confidence-tag confirmed">Событие подтверждено Rockstar</span>
+            <h3>В сеть попали десятки фрагментов ранней сборки</h3>
+            <p>
+              В роликах были видны тестовые сцены, временные интерфейсы, анимации и ранние
+              варианты игрового процесса. Rockstar подтвердила несанкционированный доступ к
+              внутренним материалам разработки и назвала произошедшее вторжением в сеть.
+            </p>
+            <p>
+              Важно: утёкшие кадры показывали незавершённую версию. Они не подтверждают
+              финальный вид графики, карту целиком, миссии, механику или дату выхода.
+            </p>
+            <a class="source-link" href="https://www.rockstargames.com/newswire" target="_blank"
+              rel="noreferrer">Официальный Rockstar Newswire ↗</a>
+          </div>
+          <div class="leak-stamp" aria-hidden="true">
+            <span>BUILD</span>
+            <strong>2022</strong>
+            <span>EARLY FOOTAGE</span>
+          </div>
+        </div>
+
+        <div class="leak-grid">
+          <article class="leak-card">
+            <span class="confidence-tag leaked">Что действительно было видно</span>
+            <h3>Ранние тестовые сцены</h3>
+            <p>
+              Интерфейс разработчика, тестовые помещения, незаконченные анимации и фрагменты
+              взаимодействия персонажей. Это полезное свидетельство разработки, но не готовая
+              демонстрация качества релизной игры.
+            </p>
+          </article>
+          <article class="leak-card">
+            <span class="confidence-tag unverified">Не считать подтверждённым</span>
+            <h3>«Полная карта» из утечки</h3>
+            <p>
+              Скриншоты и фанатские реконструкции карты быстро разошлись по сети. Они основаны
+              на неполных данных и догадках сообщества: Rockstar не публиковала по ним
+              официальную финальную карту или её точный масштаб.
+            </p>
+          </article>
+          <article class="leak-card">
+            <span class="confidence-tag unverified">Не считать подтверждённым</span>
+            <h3>Механики и вырезанный контент</h3>
+            <p>
+              Любая функция, замеченная в раннем билде, могла быть экспериментом, заглушкой
+              или временным решением. По таким кадрам нельзя обещать конкретные функции в
+              финальной версии.
+            </p>
+          </article>
+        </div>
+        <p class="editorial-note">
+          Мы не размещаем украденные игровые файлы и не выдаём предположения по утёкшим кадрам
+          за официальные обещания разработчиков.
+        </p>
+      </div>
+    </section>
+
+    <section id="rumors" class="section alt">
+      <div class="container rumor-layout">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Фильтр слухов</p>
+          <h2>Как читать «инсайды» о GTA VI</h2>
+          <p class="section-intro">
+            До официального подтверждения даже правдоподобный пост остаётся слухом. Вот быстрый
+            способ оценить очередную «утечку».
+          </p>
+        </div>
+        <div class="rumor-checklist">
+          <div class="rumor-check">
+            <span>01</span>
+            <div><strong>Есть первоисточник?</strong>
+              <p>Анонимный скриншот без контекста нельзя проверить.</p>
+            </div>
+          </div>
+          <div class="rumor-check">
+            <span>02</span>
+            <div><strong>Подтвердили Rockstar или Take-Two?</strong>
+              <p>Ищи официальный анонс, а не пересказ аккаунта.</p>
+            </div>
+          </div>
+          <div class="rumor-check">
+            <span>03</span>
+            <div><strong>Это новая сборка или старый слив?</strong>
+              <p>Старые материалы часто повторно публикуют как «свежие».</p>
+            </div>
+          </div>
+          <div class="rumor-check">
+            <span>04</span>
+            <div><strong>Факт отделён от теории?</strong>
+              <p>Сравнение кадров — анализ сообщества, а не заявление студии.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="unknowns" class="section">
+      <div class="container">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Открытые вопросы</p>
+          <h2>Что Rockstar пока не раскрыла подробно</h2>
+          <p class="section-intro">
+            Неизвестное — не повод заполнять пробел слухами. Вот детали, по которым стоит
+            дождаться официальных новостей.
+          </p>
+        </div>
+        <div class="unknowns-grid">
+          <article class="unknown-card">
+            <span>КАРТА</span>
+            <h3>Точные границы мира</h3>
+            <p>Известны штат Леонида и названия нескольких регионов, но точный размер и финальная карта не опубликованы.
+            </p>
+          </article>
+          <article class="unknown-card">
+            <span>ПЛАТФОРМЫ</span>
+            <h3>Версия для ПК</h3>
+            <p>В официальных материалах указаны PlayStation 5 и Xbox Series X|S. Отдельной даты для ПК Rockstar не
+              объявляла.</p>
+          </article>
+          <article class="unknown-card">
+            <span>ОНЛАЙН</span>
+            <h3>Будущее GTA Online</h3>
+            <p>Подробностей о сетевом режиме GTA VI, его запуске и связи с GTA Online пока недостаточно для точных
+              выводов.</p>
+          </article>
+          <article class="unknown-card">
+            <span>ГЕЙМПЛЕЙ</span>
+            <h3>Механики и занятия</h3>
+            <p>Трейлеры дают атмосферные сцены, но полный список миссий, активностей и игровых систем ещё не
+              представлен.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="world" class="section">
+      <div class="container split-layout">
+        <div class="text-panel">
+          <p class="eyebrow">Герои и места</p>
+          <h2>Что раскрыли официальные трейлеры</h2>
+          <p>
+            В роликах показаны Вайс-Сити, прибрежные районы и разные части Леониды, а также
+            Лусия и Джейсон. Визуальные сцены дают представление об атмосфере, но сами по себе
+            не раскрывают точные границы карты или полный список активностей.
+          </p>
+          <ul class="check-list">
+            <li>Вайс-Сити — переосмысление знакомого города</li>
+            <li>Леонида — вымышленный штат, где происходит действие</li>
+            <li>Лусия и Джейсон — центральная пара героев</li>
+            <li>Детали геймплея сверяй с официальными материалами</li>
+          </ul>
+          <a class="primary-btn trailer-link" href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank"
+            rel="noreferrer">Смотреть трейлер 2 ↗</a>
+        </div>
+
+        <div class="info-panel">
+          <div class="mini-card">
+            <span class="label">Официальный сайт</span>
+            <strong>Леонида зовёт</strong>
+            <p>Промо-материалы Rockstar показывают солнечный штат с Вайс-Сити в центре истории.</p>
+          </div>
+          <div class="mini-card accent">
+            <span class="label">Совет читателю</span>
+            <strong>Проверяй источник</strong>
+            <p>Фанатские теории интересны, но не заменяют официальные анонсы.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="timeline" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Хронология анонсов и утечек</p>
+          <h2>Путь от первого трейлера к релизу</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div>
+              <h3>19 сентября 2022 — утечка</h3>
+              <p>В сеть попали ранние видеоматериалы разработки. Rockstar подтвердила факт вторжения и продолжила работу
+                над игрой.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div>
+              <h3>5 декабря 2023 — первый трейлер</h3>
+              <p>Rockstar официально представила GTA VI, Вайс-Сити и главную героиню Лусию.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div>
+              <h3>6 мая 2025 — второй трейлер</h3>
+              <p>Вышел новый официальный ролик с Лусией, Джейсоном и дополнительными сценами Леониды.</p>
+            </div>
+          </div>
+          <div class="timeline-item is-current">
+            <span class="dot"></span>
+            <div>
+              <span class="timeline-kicker">ОФИЦИАЛЬНЫЙ ВИДЕОМАТЕРИАЛ</span>
+              <h3>27 августа 2026 — An Extended Look</h3>
+              <p>На странице Rockstar появился расширенный видеоматериал. Название ролика само по себе не подтверждает
+                конкретные игровые механики — их стоит считать фактами только тогда, когда студия их прямо показывает
+                или описывает.</p>
+            </div>
+          </div>
+          <div class="timeline-item is-current">
+            <span class="dot"></span>
+            <div>
+              <span class="timeline-kicker">МУЗЫКА И АНОНС</span>
+              <h3>17 сентября 2026 — GTA VI: The Album</h3>
+              <p>Rockstar объявила альбом из 34 оригинальных треков. Это отдельный музыкальный релиз: анонс не означает,
+                что все композиции обязательно войдут во внутриигровое радио.</p>
+            </div>
+          </div>
+          <div class="timeline-item is-current">
+            <span class="dot"></span>
+            <div>
+              <span class="timeline-kicker">ИЗДАНИЯ И ПРЕДЗАКАЗ</span>
+              <h3>7 октября 2026 — страница предзаказа</h3>
+              <p>На официальной странице доступны переход к предзаказу и информация об изданиях. Цены, доступность и
+                состав предложений могут зависеть от магазина, платформы и региона.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div>
+              <h3>19 ноября 2026 — объявленная дата</h3>
+              <p>Официально заявленная дата выхода на PlayStation 5 и Xbox Series X|S. Дата может измениться — проверяй
+                обновления Rockstar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="official-links">
+          <a href="https://www.youtube.com/watch?v=QdBZY2fkU-0" target="_blank" rel="noreferrer">Трейлер 1 · Rockstar
+            Games ↗</a>
+          <a href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank" rel="noreferrer">Трейлер 2 · Rockstar
+            Games ↗</a>
+          <a href="https://www.rockstargames.com/VI" target="_blank" rel="noreferrer">Официальная страница GTA VI ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> GTA VI Hub</p>
+      <p>Фанатский справочник. Не связан с Rockstar Games.</p>
+      <p>Изображения: официальный арт и трейлеры Rockstar Games.</p>
+    </div>
+  </footer>
+
+  <a class="release-countdown" href="https://www.rockstargames.com/VI" target="_blank" rel="noreferrer"
+    aria-label="Обратный отсчёт до объявленной даты выхода GTA VI — 19 ноября 2026 года. Официальная страница Rockstar.">
+    <span class="countdown-heading"><i aria-hidden="true"></i> До релиза</span>
+    <span class="countdown-clock" role="timer" aria-live="off">
+      <span><strong data-countdown-days>--</strong><small>дн</small></span>
+      <span><strong data-countdown-hours>--</strong><small>ч</small></span>
+      <span><strong data-countdown-minutes>--</strong><small>м</small></span>
+      <span class="countdown-seconds"><strong data-countdown-seconds>--</strong><small>с</small></span>
+    </span>
+    <span class="countdown-note" data-countdown-note>Заявленная дата · 19.11.2026</span>
+  </a>
+
+  <dialog class="spotlight-dialog" id="spotlight-dialog" aria-labelledby="spotlight-title">
+    <div class="spotlight-panel">
+      <div class="spotlight-search-row">
+        <span class="spotlight-search-icon" aria-hidden="true">⌕</span>
+        <input id="spotlight-search" type="search" placeholder="Искать в досье GTA VI…" autocomplete="off"
+          aria-label="Поиск по досье" aria-controls="spotlight-results" />
+        <kbd>ESC</kbd>
+        <button class="spotlight-close" type="button" data-spotlight-close aria-label="Закрыть поиск">×</button>
+      </div>
+      <div class="spotlight-content">
+        <p class="spotlight-label" id="spotlight-title">БЫСТРЫЙ ПОИСК ПО ДОСЬЕ</p>
+        <div class="spotlight-results" id="spotlight-results" role="listbox"
+          aria-label="Результаты поиска по досье"></div>
+        <p class="spotlight-hint"><span>↑</span><span>↓</span> выбрать <kbd>ENTER</kbd> открыть <kbd>CTRL K</kbd> вызвать</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="gta-news-data.js"></script>
+  <script src="gta-ui.js"></script>
+  <script src="gta.js"></script>
+  <script src="gta-motion.js"></script>
+</body>
+
+</html>

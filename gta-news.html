@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Полный каталог новостей и материалов о GTA VI: официальные факты, утечки и слухи с источниками и контекстом." />
+  <title>Каталог материалов — GTA VI Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="gta.css" />
+</head>
+
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="gta.html#top" aria-label="GTA VI Hub — на главную">
+        <span class="brand-mark">G</span>
+        <span>GTA VI Hub</span>
+      </a>
+      <a class="nav-button" href="gta.html#latest">На главную</a>
+    </div>
+  </header>
+
+  <main class="catalog-page">
+    <section class="catalog-hero">
+      <div class="container">
+        <a class="back-link" href="gta.html#latest">← Главная</a>
+        <p class="eyebrow">Архив материалов</p>
+        <h1>Каталог GTA VI</h1>
+        <p class="catalog-intro">
+          Официальные анонсы отдельно, утечки с контекстом, слухи с пометкой о статусе.
+          Ищи по всему досье и переходи к первоисточникам.
+        </p>
+        <div class="catalog-summary">
+          <span><strong id="catalog-total">—</strong> материалов в досье</span>
+          <span class="catalog-status"><i></i> Факты отделены от предположений</span>
+          <span class="catalog-updated">Перепроверено по Rockstar: 7 октября 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog-content">
+      <div class="container">
+        <div class="catalog-toolbar">
+          <div class="news-filters" role="group" aria-label="Фильтр материалов">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Все <span
+                data-filter-count></span></button>
+            <button class="filter-button" type="button" data-filter="official" aria-pressed="false">Официально <span
+                data-filter-count></span></button>
+            <button class="filter-button" type="button" data-filter="leak" aria-pressed="false">Утечки <span
+                data-filter-count></span></button>
+            <button class="filter-button" type="button" data-filter="rumor" aria-pressed="false">Слухи <span
+                data-filter-count></span></button>
+            <button class="filter-button favorites-filter" type="button" data-favorites-filter aria-pressed="false">
+              <span aria-hidden="true">☆</span> Моё досье <span data-favorites-count>0</span>
+            </button>
+          </div>
+          <label class="news-search">
+            <span aria-hidden="true">⌕</span>
+            <input id="news-search" type="search" placeholder="Поиск по каталогу…" aria-label="Поиск по материалам"
+              autocomplete="off" />
+            <kbd>Ctrl K</kbd>
+          </label>
+        </div>
+        <div class="catalog-result-bar">
+          <p id="news-count" class="news-count" aria-live="polite"></p>
+          <a href="https://www.rockstargames.com/VI" target="_blank" rel="noreferrer">Официальная страница Rockstar
+            ↗</a>
+        </div>
+        <div class="topic-searches" aria-label="Популярные темы для поиска">
+          <span>Быстрый поиск:</span>
+          <button type="button" data-query="Люсия">Люсия</button>
+          <button type="button" data-query="Джейсон">Джейсон</button>
+          <button type="button" data-query="карта">Карта и регионы</button>
+          <button type="button" data-query="персонажи">Персонажи</button>
+          <button type="button" data-query="трейлер">Трейлеры</button>
+          <button type="button" data-query="музыка">Музыка</button>
+          <button type="button" data-query="животные">Животные</button>
+          <button type="button" data-query="транспорт">Транспорт</button>
+          <button type="button" data-query="социальные видео">Соцсети</button>
+          <button type="button" data-query="утечка">Утечки</button>
+          <button type="button" data-query="геймплей">Геймплей</button>
+          <button type="button" data-query="предзаказ">Предзаказ</button>
+        </div>
+        <div class="location-filter-note" id="location-filter-note" hidden>
+          <span>Материалы региона: <strong data-location-name></strong></span>
+          <button id="location-reset" type="button">Показать весь каталог</button>
+        </div>
+        <p class="catalog-storage-note" id="catalog-storage-note" role="status" aria-live="polite" hidden></p>
+        <div id="news-list" class="news-grid catalog-grid" aria-live="polite"></div>
+        <div class="catalog-load-more-wrap" id="catalog-load-more-wrap" hidden>
+          <button class="catalog-load-more" id="catalog-load-more" type="button">
+            Загрузить ещё <span data-load-more-count></span>
+          </button>
+          <span class="catalog-pagination-note" id="catalog-pagination-note"></span>
+        </div>
+        <div class="catalog-empty" id="catalog-empty" hidden>
+          <strong>По этому запросу материалов нет</strong>
+          <p>Измени запрос или сбрось фильтры — в каталоге есть ещё темы.</p>
+          <button id="catalog-reset" class="secondary-btn" type="button">Показать все материалы</button>
+        </div>
+        <section class="source-guide" aria-labelledby="source-guide-title">
+          <div>
+            <p class="eyebrow">Как пользоваться досье</p>
+            <h2 id="source-guide-title">Сначала источник, потом вывод</h2>
+            <p>Официальные анонсы подтверждают только то, что Rockstar прямо опубликовала. Утечки рассказывают об
+              истории разработки, а слухи и фанатские разборы остаются неподтверждёнными, пока не появится
+              первоисточник.</p>
+          </div>
+          <div class="source-key">
+            <p><span class="source-key-dot official"></span><strong>Официально</strong><span>страница Rockstar, Newswire
+                или официальный трейлер</span></p>
+            <p><span class="source-key-dot leak"></span><strong>Утечка</strong><span>подтверждённый контекст ранних
+                материалов, не обещание функций</span></p>
+            <p><span class="source-key-dot rumor"></span><strong>Слух</strong><span>ожидание или интерпретация без
+                официального подтверждения</span></p>
+          </div>
+        </section>
+        <p class="editorial-note">
+          Материалы об утечках описывают историю и контекст, а не содержат украденные файлы.
+          Слухи не являются подтверждением планов Rockstar.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>GTA VI Hub · фанатский справочник</p>
+      <a href="gta.html#top">Вернуться на главную ↑</a>
+    </div>
+  </footer>
+
+  <a class="release-countdown" href="https://www.rockstargames.com/VI" target="_blank" rel="noreferrer"
+    aria-label="Обратный отсчёт до объявленной даты выхода GTA VI — 19 ноября 2026 года. Официальная страница Rockstar.">
+    <span class="countdown-heading"><i aria-hidden="true"></i> До релиза</span>
+    <span class="countdown-clock" role="timer" aria-live="off">
+      <span><strong data-countdown-days>--</strong><small>дн</small></span>
+      <span><strong data-countdown-hours>--</strong><small>ч</small></span>
+      <span><strong data-countdown-minutes>--</strong><small>м</small></span>
+      <span class="countdown-seconds"><strong data-countdown-seconds>--</strong><small>с</small></span>
+    </span>
+    <span class="countdown-note" data-countdown-note>Заявленная дата · 19.11.2026</span>
+  </a>
+
+  <dialog class="spotlight-dialog" id="spotlight-dialog" aria-labelledby="spotlight-title">
+    <div class="spotlight-panel">
+      <div class="spotlight-search-row">
+        <span class="spotlight-search-icon" aria-hidden="true">⌕</span>
+        <input id="spotlight-search" type="search" placeholder="Искать в досье GTA VI…" autocomplete="off"
+          aria-label="Поиск по досье" aria-controls="spotlight-results" />
+        <kbd>ESC</kbd>
+        <button class="spotlight-close" type="button" data-spotlight-close aria-label="Закрыть поиск">×</button>
+      </div>
+      <div class="spotlight-content">
+        <p class="spotlight-label" id="spotlight-title">БЫСТРЫЙ ПОИСК ПО ДОСЬЕ</p>
+        <div class="spotlight-results" id="spotlight-results" role="listbox"
+          aria-label="Результаты поиска по досье"></div>
+        <p class="spotlight-hint"><span>↑</span><span>↓</span> выбрать <kbd>ENTER</kbd> открыть <kbd>CTRL K</kbd> вызвать</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="gta-news-data.js"></script>
+  <script src="gta-ui.js"></script>
+  <script src="gta-catalog.js"></script>
+  <script src="gta-motion.js"></script>
+</body>
+
+</html>
